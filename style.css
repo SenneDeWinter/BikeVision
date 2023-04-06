@@ -108,28 +108,89 @@ html{
     color: black;
 }
 
-svg{
-    height: 3.4375rem;
-    width: 3.6875rem;
-    position: absolute;
-    bottom: 0.3125rem;
+img{
+    display: block;
 }
 
 #technology{
     grid-area: technology;
     height: 100vh;
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "images techtext";     
+}
+
+#techtext p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+#techtext h2{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0.75rem 0rem;
+    font-weight: 200;
+}
+
+#images{
+    grid-area: images;
+    padding: 7.78125rem 0rem 7.78125rem 7.1875rem; 
+}
+
+#techtext{
+    grid-area: techtext;
+    padding: 7.78125rem 7.1875rem 7.78125rem 0rem; 
+}
+
+#technology svg{
+    stroke: white;
 }
 
 #pricing{
     grid-area: pricing;
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "pricetext graphic";
+}
+
+#pricetext{
+    grid-area: pricetext;
+    padding: 7.78125rem 0rem 7.1875rem 7.78125rem; 
+}
+
+#pricetext h2{
+    color: black;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+#pricetext p{
+    color: black;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0.75rem 0rem;
+}
+
+#graphic{
+    grid-area: graphic;
+    padding: 7.78125rem 7.78125rem 7.1875rem 0rem; 
 }
 
 #where{
     grid-area: where;
     height: 100vh;
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "map stores";
 }
 
 #about{
@@ -137,8 +198,52 @@ svg{
     height: 100vh;
 }
 
+#about span{
+    display: inline-block;
+}
+
 #contact{
     grid-area: contact;
     height: 100vh;
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "info form";
+}
+
+#info{
+    grid-area: info;
+    padding: 7.78125rem 0rem 7.78125rem 7.78125rem; 
+}
+
+#info h2{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+#info p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0.75rem 0rem;
+}
+
+#info address{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0.75rem 0rem;
+}
+
+#info a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#form{
+    grid-area: form;
+    padding: 7.78125rem 7.78125rem 7.78125rem 0rem; 
 }
