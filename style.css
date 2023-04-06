@@ -4,4 +4,66 @@ html{
 
 #container{
     font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "header header"
+        "technology technology"
+        "pricing pricing"
+        "where where"
+        "about about"
+        "contact contact";
+}
+
+#header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px auto;
+    grid-template-areas: 
+    "navbar"
+    "headercontent";
+    background-image: url("images/header.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#navbar{
+    grid-area: navbar;
+    width: 90%;
+    background-color: #eeeeee;
+    margin: 0.625rem auto 0.625rem auto;
+}
+
+#headercontent{
+    grid-area: headercontent;
+}
+
+#technology{
+    grid-area: technology;
+    height: 100vh;
+    background-color: black;
+}
+
+#pricing{
+    grid-area: pricing;
+    height: 100vh;
+}
+
+#where{
+    grid-area: where;
+    height: 100vh;
+    background-color: black;
+}
+
+#about{
+    grid-area: about;
+    height: 100vh;
+}
+
+#contact{
+    grid-area: contact;
+    height: 100vh;
+    background-color: black;
 }
