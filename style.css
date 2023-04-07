@@ -201,7 +201,7 @@ img{
     grid-gap: 3rem;    
     align-items: center;
     justify-items: center;
-    padding: 0rem 15.6875rem;       
+    padding: 0rem 15.6875rem;     
 }
 
 #map{
@@ -250,9 +250,7 @@ img{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 40px auto;
     grid-template-areas:
-        "abouttitle abouttitle abouttitle abouttitle"
         "seppe junior indigo senne";
     align-items: center;
     justify-items: center;
@@ -262,14 +260,23 @@ img{
 #seppe p, #junior p, #indigo p, #senne p{
     margin-top: 1rem;
     text-align: center;
+    text-transform: capitalize;
+    font-weight: 200;
 }
 
-#abouttitle{
-    grid-area: abouttitle;
+#junior, #indigo, #senne{
+    margin-top: 4rem;
 }
 
 #seppe{
     grid-area: seppe;
+}
+
+#seppe h2{
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 200;
 }
 
 #junior{
@@ -354,6 +361,7 @@ input[type=text]{
     line-height: 3rem;
     padding-left: 1.29rem;
     margin-bottom: 1.8125rem;
+    font-weight: 200;
 }
 
 textarea{
@@ -368,12 +376,14 @@ textarea{
     padding: 0.9125rem 1.29rem;
     margin-bottom: 1.8125rem;
     resize: none;
+    font-weight: 200;
 }
 
 label{
     display: block;
     color: white;
     font-size: 0.875rem;
+    font-weight: 200;
     font-weight: 200;
 }
 
@@ -387,4 +397,5 @@ input[type=button], input[type=submit]{
     font-size: 1rem;
     line-height: 3rem;
     margin-top: 1.8125rem;
+    font-weight: 200;
 }
