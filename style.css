@@ -1,7 +1,7 @@
 html{
     font-size: 100%;
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
@@ -19,8 +19,12 @@ body{
         "pricing pricing"
         "where where"
         "about about"
-        "contact contact";
-    scroll-snap-align: center;    
+        "contact contact";  
+}
+
+#header, #technology, #pricing, #where, #about, #contact{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 #header{
