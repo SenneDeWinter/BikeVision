@@ -108,6 +108,13 @@ html{
     color: black;
 }
 
+svg{
+    height: 3.4375rem;
+    width: 3.6875rem;
+    position: absolute;
+    bottom: 0.3125rem;
+}
+
 img{
     display: block;
 }
@@ -119,7 +126,11 @@ img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
-        "images techtext";     
+        "images techtext";
+    grid-gap: 3rem;    
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 15.6875rem;             
 }
 
 #techtext p{
@@ -138,16 +149,10 @@ img{
 
 #images{
     grid-area: images;
-    padding: 7.78125rem 0rem 7.78125rem 7.1875rem; 
 }
 
 #techtext{
     grid-area: techtext;
-    padding: 7.78125rem 7.1875rem 7.78125rem 0rem; 
-}
-
-#technology svg{
-    stroke: white;
 }
 
 #pricing{
@@ -157,11 +162,14 @@ img{
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
         "pricetext graphic";
+    grid-gap: 3rem;  
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 15.6875rem;       
 }
 
 #pricetext{
     grid-area: pricetext;
-    padding: 7.78125rem 0rem 7.1875rem 7.78125rem; 
 }
 
 #pricetext h2{
@@ -180,7 +188,6 @@ img{
 
 #graphic{
     grid-area: graphic;
-    padding: 7.78125rem 7.78125rem 7.1875rem 0rem; 
 }
 
 #where{
@@ -190,12 +197,91 @@ img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
-        "map stores";
+        "map online";
+    grid-gap: 3rem;    
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 15.6875rem;       
+}
+
+#map{
+    grid-area: map;
+}
+
+#map, #online h2{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0.75rem 0rem;
+    font-weight: 200;
+}
+
+#online p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 3.5rem;
+}
+
+#online{
+    grid-area: online;
+}
+
+#online button{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    width: 10.625rem;
+    height: 2.5rem;
+    padding: 0.5rem 1.8rem;
+    border-radius: 1.875rem;
+    margin-bottom: 2.5rem;
+    display: block;
+}
+
+#online button a{
+    text-decoration: none;
+    color: black;
 }
 
 #about{
     grid-area: about;
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 40px auto;
+    grid-template-areas:
+        "abouttitle abouttitle abouttitle abouttitle"
+        "seppe junior indigo senne";
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 15.6875rem;      
+}
+
+#seppe p, #junior p, #indigo p, #senne p{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#abouttitle{
+    grid-area: abouttitle;
+}
+
+#seppe{
+    grid-area: seppe;
+}
+
+#junior{
+    grid-area: junior;
+}
+
+#indigo{
+    grid-area: indigo;
+}
+
+#senne{
+    grid-area: senne;
 }
 
 #about span{
@@ -210,11 +296,14 @@ img{
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
     "info form";
+    grid-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 15.6875rem; 
 }
 
 #info{
     grid-area: info;
-    padding: 7.78125rem 0rem 7.78125rem 7.78125rem; 
 }
 
 #info h2{
@@ -222,6 +311,12 @@ img{
     font-size: 1.5rem;
     text-transform: capitalize;
     font-weight: 200;
+    margin-bottom: 2.375rem;
+}
+
+#info img{
+    display: inline-block;
+    margin-right: 1.04875rem;
 }
 
 #info p{
@@ -229,13 +324,13 @@ img{
     font-size: 1rem;
     font-weight: 200;
     margin: 0.75rem 0rem;
+    display: inline-block;
 }
 
-#info address{
-    color: white;
-    font-size: 1rem;
-    font-weight: 200;
-    margin: 0.75rem 0rem;
+#info span{
+    display: block;
+    margin-bottom: 5.0875rem;
+
 }
 
 #info a{
@@ -245,5 +340,51 @@ img{
 
 #form{
     grid-area: form;
-    padding: 7.78125rem 7.78125rem 7.78125rem 0rem; 
+}
+
+input[type=text]{
+    display: block;
+    border: none;
+    width: 25.1025rem;
+    height: 3rem;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1.875rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    padding-left: 1.29rem;
+    margin-bottom: 1.8125rem;
+}
+
+textarea{
+    display: block;
+    border: none;
+    width: 25.1025rem;
+    height: 11rem;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.9375rem;
+    font-size: 1rem;
+    padding: 0.9125rem 1.29rem;
+    margin-bottom: 1.8125rem;
+    resize: none;
+}
+
+label{
+    display: block;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 200;
+}
+
+input[type=button], input[type=submit]{
+    border: none;
+    width: 17.069375rem;
+    height: 3rem;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1.875rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin-top: 1.8125rem;
 }

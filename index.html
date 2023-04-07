@@ -29,7 +29,10 @@
             </div>
             <div id="headercontent">
                 <h1>One</h1>
-                <button><a href="#technology">Learn More</a></button>               
+                <button><a href="#technology">Learn More</a></button> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                </svg>    
             </div>
         </div>
         <div id="technology">
@@ -93,6 +96,7 @@
         <div id="where">
             <div id="map">
                 <h2>find a store near you</h2>
+                <br>
                 <iframe src="https://www.google.com/maps/d/embed?mid=1gpYwkDH7dnsgP9FlifALSO5ZKpmhsxQ&ehbc=2E312F" width="640" height="480"></iframe>
             </div>
             <div id="online">
@@ -107,27 +111,37 @@
             </div>
         </div>
         <div id="about">
-            <h2>Meet the team</h2>
-            <span>
-                <img src="images/person.png" alt="foto person">
-                <p>Seppe A.</p>
-                <p>3D developer</p>
-            </span>
-            <span>
-                <img src="images/person.png" alt="foto person">
-                <p>Junior T.</p>
-                <p>AV production creator</p>
-            </span>
-            <span>
-                <img src="images/person.png" alt="foto person">
-                <p>Indigo V.</p>
-                <p>3D developer</p>
-            </span>
-            <span>
-                <img src="images/person.png" alt="foto person">
-                <p>Senne D.</p>
-                <p>web & product developer</p>
-            </span>
+            <div id="abouttitle">
+                <h2>Meet the team</h2>
+            </div>
+            <div id="seppe">
+                <span>
+                    <img src="images/person.png" alt="foto person">
+                    <p>Seppe A.</p>
+                    <p>3D developer</p>
+                </span> 
+            </div>
+            <div id="junior">
+                <span>
+                    <img src="images/person.png" alt="foto person">
+                    <p>Junior T.</p>
+                    <p>AV production creator</p>
+                </span>
+            </div>
+            <div id="indigo">
+                <span>
+                    <img src="images/person.png" alt="foto person">
+                    <p>Indigo V.</p>
+                    <p>3D developer</p>
+                </span>
+            </div>
+            <div id="senne">
+                <span>
+                    <img src="images/person.png" alt="foto person">
+                    <p>Senne D.</p>
+                    <p>web & product developer</p>
+                </span>
+            </div>
         </div>
         <div id="contact">
             <div id="info">
@@ -142,19 +156,18 @@
                 </span>
                 <span>
                     <img src="images/briefcase.png" alt="logo briefcase">
-                    <p><address>Amerikalei, 2000 Antwerpen</address></p>
+                    <p>Amerikalei, 2000 Antwerpen</p>
                 </span>
-                <span>
                     <img src="images/euro.png" alt="logo euro">
                     <p>BE 0123 456 789</p>
-                </span>
             </div>
             <div id="form">
                 <form action="#" method="post">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="checkbox" name="" id="">
+                    <input type="text" name="name" value="Name">
+                    <input type="text" name="email" value="Email">
+                    <input type="text" name="subject" value="Subject">
+                    <textarea name="message">Your Message</textarea>
+                    <label for="newsletter"><input type="checkbox" checked="checked" name="newsletter">Receive the newsletter about updates/new products</label>
                     <input type="submit" value="Send Message">
                 </form>
             </div>
