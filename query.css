@@ -1,0 +1,183 @@
+@media screen and (max-width: 430px) {
+    html{
+        font-size: 100%;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
+    
+    body{
+        overflow: visible;
+    }
+    
+    #container{
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "header"
+            "technology"
+            "pricing"
+            "where"
+            "about"
+            "contact";  
+    }
+    
+    #header, #technology, #pricing, #where, #about, #contact{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+    
+    #header{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "navbar"
+        "headercontent";
+        background-image: none;
+        background-color: black;
+        height: auto;
+    }
+    
+    #navbar{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas:    
+            "logo"
+            "nav";
+    }
+    
+    #logo{
+        text-align: center;
+    }
+    
+    #logo h1{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    #nav ul{
+        text-align: center;
+    }
+    
+    #nav ul li{
+        display: block;
+        margin-left: 0rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #headercontent{
+        background-image: url("images/header.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 17.373125rem;
+    }
+    
+    svg{
+        display: none;
+    }
+    
+    img{
+        display: block;
+    }
+    
+    #technology{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "techtext"
+            "images";
+        padding: 0rem 0rem; 
+        text-align: center;
+        padding: 3rem;            
+    }
+
+    #technology img, #pricing img{
+        width: 100%;
+        height: auto;
+    }
+    
+    #pricing{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "pricetext"
+            "graphic";
+        padding: 0rem 0rem;
+        padding: 3rem;
+        text-align: center;       
+    }
+    
+    #where{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "map"
+            "online";
+        grid-gap: 3rem;    
+        padding: 0rem 0rem;
+        text-align: center;     
+    }
+    
+    #map{
+        padding-top: 2rem;
+    }
+
+    iframe{
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    #online{
+        padding-bottom: 2rem;
+    }
+    
+    #online button{
+        margin-bottom: 0rem;
+        margin: 1.25rem auto;
+    }
+    
+    #online button a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #about{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "seppe"
+            "junior" 
+            "indigo" 
+            "senne";
+        padding: 0rem 0rem;    
+        padding: 3rem; 
+        text-align: center; 
+    }
+    
+    #contact{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "info"
+        "form";
+        padding: 0rem 0rem; 
+        padding: 3rem;
+    }
+    
+    #form{
+        grid-area: form;
+    }
+    
+    input[type=text]{
+        width: 90%;
+    }
+    
+    textarea{
+        width: 85%;
+    }
+    
+    input[type=button], input[type=submit]{
+        width: 100%;
+    }
+}
