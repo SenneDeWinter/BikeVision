@@ -13,7 +13,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "technology technology"
         "pricing pricing"
@@ -362,6 +362,21 @@ img{
 }
 
 input[type=text]{
+    display: block;
+    border: none;
+    width: 25.1025rem;
+    height: 3rem;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1.875rem;
+    font-size: 1rem;
+    line-height: 3rem;
+    padding-left: 1.29rem;
+    margin-bottom: 1.8125rem;
+    font-weight: 200;
+}
+
+input[type=email]{
     display: block;
     border: none;
     width: 25.1025rem;

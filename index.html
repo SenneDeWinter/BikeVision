@@ -161,12 +161,12 @@
                     <img src="images/euro.png" alt="logo euro">
                     <p>BE 0123 456 789</p>
             </div>
-            <div id="form">
-                <form action="#" method="post">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" placeholder="Your Message"></textarea>
+            <div id="form">   
+                <form action="send.php" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                     <label for="newsletter"><input type="checkbox" checked="checked" name="newsletter">Receive the newsletter about updates/new products</label>
                     <input type="submit" value="Send Message">
                 </form>
