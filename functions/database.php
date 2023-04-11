@@ -54,7 +54,7 @@ function deleteMessage(PDO $conn, int $id): void
 
 function getSubscribers(PDO $conn): array
 {
-    $statement = $conn->prepare('SELECT * FROM messages WHERE newsletter = 1;');
+    $statement = $conn->prepare('SELECT DISTINCT email FROM messages WHERE newsletter = 1;');
     $statement->execute();
 
     $subscribers = $statement->fetchAll();
