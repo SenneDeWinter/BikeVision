@@ -159,18 +159,31 @@
     
     #form{
         grid-area: form;
-    }
-    
-    input[type=text]{
         width: 90%;
     }
     
+    input[type=text]{
+        width: 15.675rem;
+        margin: 1.8125rem auto;
+    }
+
+    input[type=email]{
+        width: 15.675rem;
+        margin: 1.8125rem auto;
+    }
+    
     textarea{
-        width: 85%;
+        width: 14.675rem;
+        margin: 1.8125rem auto;
+    }
+
+    label{
+        padding-left: 0.5rem;
     }
     
     input[type=button], input[type=submit]{
         width: 100%;
         color: black;
+        margin: 1.8125rem auto;
     }
 }
