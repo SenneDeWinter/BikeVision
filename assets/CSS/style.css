@@ -36,7 +36,7 @@ body{
     grid-template-areas: 
     "navbar"
     "headercontent";
-    background-image: url("images/header.jpeg");
+    background-image: url("../images/header.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
