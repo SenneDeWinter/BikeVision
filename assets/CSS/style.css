@@ -19,10 +19,11 @@ body{
         "pricing pricing"
         "where where"
         "about about"
-        "contact contact";  
+        "contact contact"
+        "copyright copyright";  
 }
 
-#header, #technology, #pricing, #where, #about, #contact{
+#header, #technology, #pricing, #where, #about, #copyright{
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
@@ -473,4 +474,14 @@ input[type=button], input[type=submit]{
     line-height: 3rem;
     margin-top: 1.8125rem;
     font-weight: 200;
+}
+
+#copyright{
+    grid-area: copyright;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: 200;
+    font-size: 1rem;
 }
