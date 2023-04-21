@@ -60,7 +60,7 @@
     }
     
     #headercontent{
-        background-image: url("images/header.jpeg");
+        background-image: url("/assets/images/header.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 17.373125rem;
