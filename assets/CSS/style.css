@@ -51,7 +51,17 @@ body{
     line-height: 40px;
     grid-template-areas:    
         "logo nav";
+    overflow: visible;    
 }
+
+.sticky {
+    position: fixed;
+    justify-self: center;
+    width: 90%;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
 
 #logo{
     grid-area: logo;

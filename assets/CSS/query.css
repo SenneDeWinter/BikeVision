@@ -39,6 +39,12 @@
             "logo"
             "nav";
     }
+
+    .sticky {
+        position: relative;
+        width: 100%;
+        padding: 0rem;
+      }
     
     #logo img{
         margin: 0 auto;
