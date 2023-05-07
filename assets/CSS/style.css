@@ -15,6 +15,7 @@ body{
     grid-template-columns: repeat(2,1fr);
     grid-template-areas:
         "header header"
+        "products products"
         "technology technology"
         "pricing pricing"
         "where where"
@@ -23,7 +24,7 @@ body{
         "copyright copyright";  
 }
 
-#header, #technology, #pricing, #where, #about, #copyright{
+#header, #products, #technology, #pricing, #where, #about, #copyright{
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
@@ -129,7 +130,7 @@ body{
     margin-bottom: 1rem;
 }
 
-#headercontent button{
+#headercontent button, #one button , #oneinstall button{
     font-family: 'Montserrat', sans-serif;
     border: none;
     background-color: white;
@@ -139,7 +140,7 @@ body{
     display: block;
 }
 
-#headercontent button a{
+#headercontent button a, #one button a, #oneinstall button a{
     text-decoration: none;
     color: black;
 }
@@ -206,6 +207,88 @@ svg{
 
 img{
     display: block;
+}
+
+#products{
+    grid-area: products;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "one oneinstall";
+    height: 100vh;
+    grid-gap: 2rem;
+    background-color: white; 
+    align-items: center;
+    justify-items: center;
+    padding: 0rem 15.6875rem;
+}
+
+#one, #oneinstall{
+    grid-area: one;
+    background-color: black;
+    height: auto;
+    width: 80%;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+
+#one h2, #oneinstall h2{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin: 0.75rem 0rem;
+    font-weight: 200;
+}
+
+#one p, #oneinstall p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+}
+
+#one img, #oneinstall img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#one li, #oneinstall li{
+    list-style-type: "⚡️";
+    margin-left: 1rem;
+}
+
+#oneinstall .important{
+    list-style-type: "❗️";
+}
+
+#one ul, #oneinstall ul{
+    margin: 1.5rem 0rem;
+}
+
+#one ul li, #oneinstall ul li{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+
+b{
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#oneinstall{
+    grid-area: oneinstall;
+}
+
+#one button, #oneinstall button{
+    width: 100%;
 }
 
 #technology{
