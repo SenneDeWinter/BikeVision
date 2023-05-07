@@ -73,7 +73,11 @@
     }
 
     #headercontent h1{
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+
+    #headercontent h2{
+        font-size: 1.3rem;
     }
     
     svg{
