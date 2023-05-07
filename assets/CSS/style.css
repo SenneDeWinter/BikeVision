@@ -48,6 +48,7 @@ body{
     margin: 0.9375rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    line-height: 40px;
     grid-template-areas:    
         "logo nav";
 }
@@ -56,12 +57,16 @@ body{
     grid-area: logo;
 }
 
-#logo h1{
-    font-size: 1.125rem;
-    color: white;
-    font-weight: 500;
-    display: inline-block;
+#logo img{
+    height: 40px;
+    width: 40px;
+    display: block;
+    transition: transform .7s ease-in-out;
 }
+
+#logo img:hover {
+    transform: rotate(360deg);
+  }
 
 #logo h1 a{
     text-decoration: none;

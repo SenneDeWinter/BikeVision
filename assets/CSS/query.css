@@ -40,11 +40,11 @@
             "nav";
     }
     
-    #logo{
-        text-align: center;
+    #logo img{
+        margin: 0 auto;
     }
     
-    #logo h1{
+    #logo img{
         display: block;
         margin-bottom: 1rem;
     }
@@ -64,6 +64,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 17.373125rem;
+    }
+
+    #headercontent h1{
+        font-size: 4rem;
     }
     
     svg{
