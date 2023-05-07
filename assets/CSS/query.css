@@ -13,6 +13,7 @@
         grid-template-columns: 100%;
         grid-template-areas: 
             "header"
+            "products"
             "technology"
             "pricing"
             "where"
@@ -86,6 +87,59 @@
     
     img{
         display: block;
+    }
+
+    #products{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "one"
+            "oneinstall";
+        grid-gap: 0rem;    
+        height: auto;
+        padding: 0rem 0rem;
+    }
+    
+    #one, #oneinstall{
+        background-color: white;
+    }
+    
+    #one h2, #oneinstall h2{
+        color: black;
+    }
+    
+    #one p, #oneinstall p{
+        color: black;
+    }
+    
+    #one img, #oneinstall img{
+        width: 100%;
+    }
+    
+    #one li, #oneinstall li{
+        list-style-type: "⚡️";
+        margin-left: 1rem;
+        color: black;
+    }
+    
+    #one ul li, #oneinstall ul li{
+        color: black;
+    }
+    
+    b{
+        color: black;
+    }
+    
+    #oneinstall{
+        grid-area: oneinstall;
+    }
+    
+    #one button, #oneinstall button{
+        width: 100%;
+        background-color: black;
+    }
+
+    #one button a, #oneinstall button a{
+        color: white;
     }
     
     #technology{
