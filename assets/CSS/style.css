@@ -111,6 +111,14 @@ body{
     display: block;
 }
 
+#headercontent h2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 1rem;
+}
+
 #headercontent button{
     font-family: 'Montserrat', sans-serif;
     border: none;
