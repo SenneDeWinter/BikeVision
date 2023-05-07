@@ -370,6 +370,12 @@ b{
     grid-area: graphic;
 }
 
+#graphic img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
 #where{
     grid-area: where;
     height: 100vh;
