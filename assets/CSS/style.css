@@ -144,6 +144,11 @@ body{
     color: black;
 }
 
+button:hover {
+	-webkit-transform: translateY(2px);
+	transform: translateY(2px);
+}
+
 svg{
     height: 3.4375rem;
     width: 3.6875rem;
