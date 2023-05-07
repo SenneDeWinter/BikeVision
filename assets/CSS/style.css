@@ -388,7 +388,7 @@ b{
     grid-area: map;
 }
 
-#map, #online h2{
+#map h2, #online h2{
     color: white;
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -407,6 +407,11 @@ b{
 
 #online{
     grid-area: online;
+}
+
+iframe{
+    border: none;
+    border-radius: 1.5rem;
 }
 
 #online button{
