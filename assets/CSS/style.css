@@ -464,6 +464,10 @@ iframe{
     font-weight: 200;
 }
 
+#seppe p:nth-of-type(2), #indigo p:nth-of-type(2), #junior p:nth-of-type(2), #senne p:nth-of-type(2){
+    font-weight: 600;
+}
+
 #junior, #indigo, #senne{
     margin-top: 4rem;
 }
