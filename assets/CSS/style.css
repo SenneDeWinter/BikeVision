@@ -233,7 +233,7 @@ img{
     width: 80%;
     color: white;
     border-radius: 1.5rem;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 #one h2, #oneinstall h2{
@@ -306,6 +306,13 @@ b{
     align-items: center;
     justify-items: center;
     padding: 0rem 15.6875rem;             
+}
+
+#images img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 #techtext p{
