@@ -48,9 +48,7 @@ window.addEventListener('scroll', e => {
 
   // Add the active class to the current nav link
   navLinks.forEach(link => {
-    link.classList.remove('active');
     if (link.getAttribute('href') === currentSectionId) {
-      link.classList.add('active');
       link.style.color = "rgb(117, 251, 253)"; // Set the color of the active link to red
     }else {
       link.style.color = ''; // Reset the color of the inactive links
