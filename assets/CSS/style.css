@@ -37,9 +37,10 @@ body{
     grid-template-areas: 
     "navbar"
     "headercontent";
-    background-image: url("../images/header.png");
+    background-image: url(../images/loop.gif);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    background-position: bottom center;
     height: 100vh;
 }
 
