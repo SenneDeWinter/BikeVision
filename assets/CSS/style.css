@@ -255,7 +255,8 @@ img{
 #one img, #oneinstall img{
     display: block;
     margin: 0 auto 0.5rem auto;
-    width: 90%;
+    width: 26.375rem;
+    height: 14.875rem;
 }
 
 #one li, #oneinstall li{
