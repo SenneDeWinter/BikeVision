@@ -1,10 +1,9 @@
-var layer = new L.StamenTileLayer("toner");
-var map = new L.Map("map", {
-    center: new L.LatLng(51.6520, 5.3668),
-    zoom: 7,
-    maxZoom: 17
-});
-map.addLayer(layer);
+var map = L.map("map").setView([51.6520, 5.3668], 7);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
 
 var locations = [
     ["BikeVision HQ", 51.2068347, 4.3959301],
@@ -63,15 +62,8 @@ var locations = [
     ["Fietsenwinkel De Geus Edegem", 51.1545296, 4.4463125]
 ]
 
-var blackIcon = L.icon({
-    iconUrl: 'assets/images/marker.png',
-    iconSize: [30, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34]
-});
-
 for (var i = 0; i < locations.length; i++) {
-    marker = new L.marker([locations[i][1], locations[i][2]], { icon: blackIcon })
+    marker = new L.marker([locations[i][1], locations[i][2]])
         .bindPopup(locations[i][0])
         .addTo(map);
 }
