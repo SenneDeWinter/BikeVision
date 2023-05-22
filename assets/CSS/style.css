@@ -408,6 +408,8 @@ b{
 
 #map{
     grid-area: map;
+    width: 40rem;
+    height: 30rem;
 }
 
 #map h2, #online h2{

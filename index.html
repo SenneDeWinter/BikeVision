@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
     <link rel="stylesheet" href="assets/CSS/query.css" type="text/css">
     <title>BikeVision</title>
@@ -136,13 +138,11 @@
         </div>
         <div id="where">
             <div id="map">
-                <h2>Get ready to ride</h2>
-                <h2>Physical stores</h2>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1gpYwkDH7dnsgP9FlifALSO5ZKpmhsxQ&ehbc=2E312F" width="640" height="480"></iframe>
+
             </div>
             <div id="online">
-                <h2>Online stores</h2>
-                <p>One is also available at select online retailers:</p>
+                <h2>Buy Now</h2>
+                <p>One is available in store or online:</p>
                 <button><a href="http://bol.com" target="_blank">Bol.com - €125</a></button>
                 <button><a href="http://coolblue.be" target="_blank">Coolblue - €125</a></button>
                 <button><a href="http://decathlon.be/nl" target="_blank">Decathlon - €125</a></button>
@@ -216,5 +216,9 @@
         </div>
     </div>
     <script src="assets/script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+    <script src="assets/map.js"></script>
 </body>
 </html>
