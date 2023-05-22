@@ -67,14 +67,16 @@
     }
     
     #headercontent{
-        background-image: url("/assets/images/header.png");
+        background-image: url("/assets/images/loop.gif");
+        background-position: bottom center;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-size: cover;
         height: 17.373125rem;
     }
 
     #headercontent h1{
         font-size: 3rem;
+        padding-top: 0rem;
     }
 
     #headercontent h2{
